@@ -1,0 +1,9 @@
+CRITICAL - 2021-01-23 04:19:13 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/detail', Array, true)
+#1 C:\xampp\htdocs\komiks\app\Controllers\Komik.php(46): view('komik/detail', Array)
+#2 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->detail('komik-kuh')
+#3 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
