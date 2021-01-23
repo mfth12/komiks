@@ -1,0 +1,78 @@
+CRITICAL - 2021-01-22 09:57:12 --> syntax error, unexpected ')', expecting '['
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/index', Array, true)
+#1 C:\xampp\htdocs\komiks\app\Controllers\Komik.php(26): view('komik/index', Array)
+#2 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#3 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-22 10:15:58 --> syntax error, unexpected 'dd' (T_STRING)
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('komik')
+#1 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('komik')
+#2 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-22 10:18:40 --> Invalid file: komik/detail.php
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('komik/detail.ph...')
+#1 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/detail', Array, true)
+#2 C:\xampp\htdocs\komiks\app\Controllers\Komik.php(42): view('komik/detail', Array)
+#3 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->detail('boruto')
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#5 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-01-22 10:24:53 --> syntax error, unexpected '='
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/detail', Array, true)
+#1 C:\xampp\htdocs\komiks\app\Controllers\Komik.php(42): view('komik/detail', Array)
+#2 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->detail('boruto')
+#3 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-22 11:41:14 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-22 11:55:43 --> Allowed fields must be specified for model: App\Models\KomikModel
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Komi...')
+#1 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Model.php(735): CodeIgniter\Model->doProtectFields(Array)
+#2 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#3 C:\xampp\htdocs\komiks\app\Controllers\Komik.php(67): CodeIgniter\Model->save(Array)
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->save()
+#5 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#6 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-22 18:26:23 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\komiks\app\Views\komik\index.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/index', Array, true)
+#3 C:\xampp\htdocs\komiks\app\Controllers\Komik.php(28): view('komik/index', Array)
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#5 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#6 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-22 20:54:26 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/create', Array, true)
+#1 C:\xampp\htdocs\komiks\app\Controllers\Komik.php(57): view('komik/create', Array)
+#2 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->create()
+#3 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\komiks\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\komiks\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
