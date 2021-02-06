@@ -95,6 +95,57 @@ class Komik extends BaseController
         return redirect()->to('/komik');
     }
 
+    public function edit($slug)
+    {
+        $data = [
+            'judultab' => 'Form Ubah Komik',
+            'validation' => \Config\Services::validation(),
+            'komik' => $this->komikModel->getKomik($slug)
+        ];
+
+        return view('komik/edit', $data);
+    }
+
+    public function update($id)
+    {
+        //cek judul
+        $komikLama = $this->komikModel->getKomik($this->request->getVar('slug'));
+        if($komikLama['judul'] == $this->request->getVar('judul')) {
+            $rule_judul = 'required';
+        } else {
+            $rule_judul = 'required|is_unique[komik.judul]';
+        }
+
+        if(!$this->validate([
+            // 'judul' => 'required|is_unique[komik.judul]',
+            'judul' => [
+                'rules' => $rule_judul,
+                'errors' => [
+                    'required' => '{field} komik harus diisi.',
+                    'is_unique' => '{field} komik sudah ada, silakan input {field} lainnya.'
+                ]
+            ],
+            'penulis' => 'required'
+        ])) {
+            $validation = \Config\Services::validation();
+            // dd($validation); //nangkep
+            return redirect()->to('/komik/edit/'. $this->request->getVar('slug'))->withInput()->with('validation', $validation);
+        }
+        // dd($this->request->getVar()); //melihat semua inputan
+        $slug = url_title($this->request->getVar('judul'), '-', true);
+        $this->komikModel->save([
+            'id' => $id,
+            'judul' => $this->request->getVar('judul'),
+            'slug' => $slug,
+            'penulis' => $this->request->getVar('penulis'),
+            'penerbit' => $this->request->getVar('penerbit'),
+            'sampul' => $this->request->getVar('sampul')
+        ]);
+        // return view('komik/save', $data);
+        session()->setFlashdata('pesan_tambah','data komik telah diubah.');
+        return redirect()->to('/komik');
+    }
+
 
     //--------------------------------------------------------------------
 

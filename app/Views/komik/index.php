@@ -8,7 +8,7 @@
                 <h1 class="mt-3"><?= $judultab; ?><a href="/komik/create" class="btn btn-primary btn-sm mb-1 mx-2">Tambah Komik</a></h1>
             </div>
             <?php if (session()->getFlashdata('pesan_tambah')) : ?>
-                <div class="alert alert-success">
+                <div class="alert alert-success alert-dismissible fade show">
                     <strong>Berhasil, </strong>
                     <?= session()->getFlashdata('pesan_tambah'); ?>
                     <!-- <button class="close" data-dismiss="alert">&times;</button> -->
@@ -17,7 +17,7 @@
             <?php endif; ?>
             <!-- saparate -->
             <?php if (session()->getFlashdata('pesan_hapus')) : ?>
-            <div class="alert alert-danger">
+            <div class="alert alert-danger alert-dismissible fade show">
                 <strong>Terhapus, </strong>
                 <?= session()->getFlashdata('pesan_hapus'); ?>
                 <!-- <button class="close" data-dismiss="alert">&times;</button> -->
