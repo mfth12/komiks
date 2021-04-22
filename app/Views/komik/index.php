@@ -41,7 +41,7 @@
                     <?php foreach ($komik as $kom) : ?>
                         <tr>
                             <th scope="row"><?= $i++; ?></th>
-                            <td><img src="/img/<?= $kom['sampul']; ?>" class="sampul" alt=""></td>
+                            <td><img src="/img/komik/<?= $kom['sampul']; ?>" class="sampul" alt=""></td>
                             <td><?= $kom['judul']; ?></td>
                             <td><?= $kom['penulis']; ?></td>
                             <td><a href="<?= base_url('/komik/' . $kom['slug']); ?>" class="btn btn-success btn-sm">Detail</a></td>
